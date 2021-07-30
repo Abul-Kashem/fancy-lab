@@ -1,0 +1,12 @@
+2021-07-26T17:31:21+00:00 CRITICAL syntax error, unexpected end of file in C:\laragon\www\fancy-lab\wp-content\themes\fancylab\functions.php on line 139
+
+2021-07-26T17:31:27+00:00 CRITICAL syntax error, unexpected end of file in C:\laragon\www\fancy-lab\wp-content\themes\fancylab\functions.php on line 139
+
+2021-07-26T17:33:21+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' in C:\laragon\www\fancy-lab\wp-content\themes\fancylab\functions.php on line 141
+
+2021-07-26T17:33:27+00:00 CRITICAL syntax error, unexpected '}', expecting ';' or ',' in C:\laragon\www\fancy-lab\wp-content\themes\fancylab\functions.php on line 141
+
+2021-07-26T17:48:39+00:00 CRITICAL Cannot redeclare fancy_lab_open_container_row() (previously declared in C:\laragon\www\fancy-lab\wp-content\themes\fancylab\functions.php:139) in C:\laragon\www\fancy-lab\wp-content\themes\fancylab\functions.php on line 145
+
+2021-07-26T17:53:42+00:00 CRITICAL syntax error, unexpected end of file in C:\laragon\www\fancy-lab\wp-content\themes\fancylab\functions.php on line 151
+

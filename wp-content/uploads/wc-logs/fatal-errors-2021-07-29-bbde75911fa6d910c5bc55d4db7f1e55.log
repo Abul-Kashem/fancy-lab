@@ -1,0 +1,54 @@
+2021-07-29T09:20:27+00:00 CRITICAL syntax error, unexpected end of file in C:\laragon\www\fancy-lab\wp-content\themes\fancylab\inc\customizer.php on line 45
+
+2021-07-29T09:20:38+00:00 CRITICAL syntax error, unexpected end of file in C:\laragon\www\fancy-lab\wp-content\themes\fancylab\inc\customizer.php on line 45
+
+2021-07-29T09:20:50+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Customize_Manager::add_controld() in C:\laragon\www\fancy-lab\wp-content\themes\fancylab\inc\customizer.php:33
+Stack trace:
+#0 C:\laragon\www\fancy-lab\wp-includes\class-wp-hook.php(303): fancy_lab_customizer(Object(WP_Customize_Manager))
+#1 C:\laragon\www\fancy-lab\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#2 C:\laragon\www\fancy-lab\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#3 C:\laragon\www\fancy-lab\wp-includes\class-wp-customize-manager.php(933): do_action('customize_regis...', Object(WP_Customize_Manager))
+#4 C:\laragon\www\fancy-lab\wp-includes\class-wp-hook.php(303): WP_Customize_Manager->wp_loaded('')
+#5 C:\laragon\www\fancy-lab\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#6 C:\laragon\www\fancy-lab\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#7 C:\laragon\www\fancy-lab\wp-settings.php(600): do_action('wp_loaded')
+#8 C:\laragon\www\fancy-lab\wp-config.php(98): require_once('C: in C:\laragon\www\fancy-lab\wp-content\themes\fancylab\inc\customizer.php on line 33
+
+2021-07-29T09:20:51+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Customize_Manager::add_controld() in C:\laragon\www\fancy-lab\wp-content\themes\fancylab\inc\customizer.php:33
+Stack trace:
+#0 C:\laragon\www\fancy-lab\wp-includes\class-wp-hook.php(303): fancy_lab_customizer(Object(WP_Customize_Manager))
+#1 C:\laragon\www\fancy-lab\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#2 C:\laragon\www\fancy-lab\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#3 C:\laragon\www\fancy-lab\wp-includes\class-wp-customize-manager.php(933): do_action('customize_regis...', Object(WP_Customize_Manager))
+#4 C:\laragon\www\fancy-lab\wp-includes\class-wp-hook.php(303): WP_Customize_Manager->wp_loaded('')
+#5 C:\laragon\www\fancy-lab\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#6 C:\laragon\www\fancy-lab\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#7 C:\laragon\www\fancy-lab\wp-settings.php(600): do_action('wp_loaded')
+#8 C:\laragon\www\fancy-lab\wp-config.php(98): require_once('C: in C:\laragon\www\fancy-lab\wp-content\themes\fancylab\inc\customizer.php on line 33
+
+2021-07-29T13:27:29+00:00 CRITICAL Uncaught Error: Class 'WP_Bootstrap_Navwalker' not found in C:\laragon\www\fancy-lab\wp-content\themes\fancylab\header.php:103
+Stack trace:
+#0 C:\laragon\www\fancy-lab\wp-includes\template.php(770): require_once()
+#1 C:\laragon\www\fancy-lab\wp-includes\template.php(716): load_template('C:\\laragon\\www\\...', true, Array)
+#2 C:\laragon\www\fancy-lab\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\laragon\www\fancy-lab\wp-content\themes\fancylab\page.php(12): get_header()
+#4 C:\laragon\www\fancy-lab\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\fancy-lab\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\fancy-lab\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\fancy-lab\wp-content\themes\fancylab\header.php on line 103
+
+2021-07-29T13:27:38+00:00 CRITICAL Uncaught Error: Class 'WP_Bootstrap_Navwalker' not found in C:\laragon\www\fancy-lab\wp-content\themes\fancylab\header.php:103
+Stack trace:
+#0 C:\laragon\www\fancy-lab\wp-includes\template.php(770): require_once()
+#1 C:\laragon\www\fancy-lab\wp-includes\template.php(716): load_template('C:\\laragon\\www\\...', true, Array)
+#2 C:\laragon\www\fancy-lab\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\laragon\www\fancy-lab\wp-content\themes\fancylab\page.php(12): get_header()
+#4 C:\laragon\www\fancy-lab\wp-includes\template-loader.php(106): include('C:\\laragon\\www\\...')
+#5 C:\laragon\www\fancy-lab\wp-blog-header.php(19): require_once('C:\\laragon\\www\\...')
+#6 C:\laragon\www\fancy-lab\index.php(17): require('C:\\laragon\\www\\...')
+#7 {main}
+  thrown in C:\laragon\www\fancy-lab\wp-content\themes\fancylab\header.php on line 103
+
+2021-07-29T17:14:05+00:00 CRITICAL syntax error, unexpected ')' in C:\laragon\www\fancy-lab\wp-content\themes\fancylab\inc\customizer.php on line 368
+
