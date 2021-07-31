@@ -16,13 +16,18 @@ get_header(); ?>
         <div class="container">
             <div class="row">
                 <?php
-
+                // Load posts loop
                 if (have_posts()) :
                     while (have_posts()) : the_post();
                 ?>
                         <article class="col">
                             <h1><?php the_title(); ?></h1>
                             <div class="content"><?php the_content(); ?></div>
+                            <?php
+                            if (comments_open() || get_comments_number()) :
+                                comments_template();
+                            endif;
+                            ?>
                         </article>
                     <?php
                     endwhile;
