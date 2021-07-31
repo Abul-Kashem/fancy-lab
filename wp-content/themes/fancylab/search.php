@@ -36,7 +36,7 @@ get_header();
                 else :
                 ?>
 
-                    <p>There are no result for query.</p>
+                    <p><?php _e('There are no result for query.', 'fancylab'); ?></p>
 
                 <?php endif; ?>
 

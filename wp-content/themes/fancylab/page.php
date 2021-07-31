@@ -25,7 +25,7 @@ get_header(); ?>
                 else :
                 ?>
 
-                    <p>Nothing to display</p>
+                    <p><?php _e('Nothing to display', 'fancylab'); ?></p>
 
                 <?php endif; ?>
 
