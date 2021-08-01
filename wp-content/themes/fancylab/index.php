@@ -33,15 +33,15 @@ get_header(); ?>
 
                         // We're using numeric page navigation here.
                         the_posts_pagination(array(
-                            'prev_text' => __('Previous', 'fancylab'),
-                            'next_text' => __('Next', 'fancylab'),
+                            'prev_text' => esc_html_e('Previous', 'fancylab'),
+                            'next_text' => esc_html_e('Next', 'fancylab'),
                         ));
 
                     else :
 
                     ?>
 
-                        <p><?php _e('Nothing to display', 'fancylab'); ?></p>
+                        <p><?php esc_html_e('Nothing to display', 'fancylab'); ?></p>
 
                     <?php endif; ?>
                 </div>

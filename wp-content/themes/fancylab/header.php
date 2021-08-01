@@ -21,7 +21,6 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fancy Lab</title>
     <?php wp_head(); ?>
 </head>
 
@@ -39,7 +38,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="brand col-md-3 col-12 col-lg-2 text-center text-md-left">
-                            <a href="<?php home_url('/'); ?>">
+                            <a href="<?php esc_url(home_url('/')); ?>">
                                 <?php if (has_custom_logo()) : ?>
                                     <?php the_custom_logo(); ?>
                                 <?php else : ?>
@@ -59,17 +58,17 @@
                                                 <?php if (is_user_logged_in()) : ?>
 
                                                     <li>
-                                                        <a href="<?php echo esc_url(get_permalink(get_option('woocommerce_myaccount_page_id'))); ?>" class="nav-link"><?php _e('My Account', 'fancylab'); ?></a>
+                                                        <a href="<?php echo esc_url(get_permalink(get_option('woocommerce_myaccount_page_id'))); ?>" class="nav-link"><?php esc_html_e('My Account', 'fancylab'); ?></a>
                                                     </li>
 
                                                     <li>
-                                                        <a href="<?php echo esc_url(wp_logout_url(get_permalink(get_option('woocommerce_myaccount_page_id')))); ?>" class="nav-link"><?php _e('Logout', 'fancylab'); ?></a>
+                                                        <a href="<?php echo esc_url(wp_logout_url(get_permalink(get_option('woocommerce_myaccount_page_id')))); ?>" class="nav-link"><?php esc_html_e('Logout', 'fancylab'); ?></a>
                                                     </li>
 
                                                 <?php else : ?>
 
                                                     <li>
-                                                        <a href="<?php echo esc_url(get_permalink(get_option('woocommerce_myaccount_page_id'))); ?>" class="nav-link"><?php _e('Login / Register', 'fancylab'); ?></a>
+                                                        <a href="<?php echo esc_url(get_permalink(get_option('woocommerce_myaccount_page_id'))); ?>" class="nav-link"><?php esc_html_e('Login / Register', 'fancylab'); ?></a>
                                                     </li>
 
                                                 <?php endif; ?>
@@ -78,8 +77,8 @@
                                         </div>
 
                                         <div class="cart text-right">
-                                            <a href="<?php echo wc_get_cart_url(); ?>"><span class="cart-icon"></span></a>
-                                            <span class="items"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+                                            <a href="<?php echo esc_url(wc_get_cart_url()); ?>"><span class="cart-icon"></span></a>
+                                            <span class="items"><?php echo esc_html(WC()->cart->get_cart_contents_count()); ?></span>
                                         </div>
 
                                     <?php endif; ?>

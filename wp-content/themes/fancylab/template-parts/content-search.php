@@ -23,14 +23,14 @@
     </div>
     <div class="meta">
         <p>
-            <?php _e('Published by', 'fancylab'); ?> <?php the_author_posts_link(); ?> <?php _e('on', 'fancylab'); ?> <?php echo get_the_date(); ?>
+            <?php esc_html_e('Published by', 'fancylab'); ?> <?php the_author_posts_link(); ?> <?php esc_html_e('on', 'fancylab'); ?> <?php echo esc_html(get_the_date()); ?>
             <br>
             <?php if (has_category()) : ?>
-                <?php _e('Categories', 'fancylab'); ?> : <span><?php the_category(' '); ?></span>
+                <?php esc_html_e('Categories', 'fancylab'); ?> : <span><?php the_category(' '); ?></span>
             <?php endif; ?>
             <br>
             <?php if (has_tag()) : ?>
-                <?php _e('Tags', 'fancylab'); ?> : <span><?php the_tags('', ', '); ?></span>
+                <?php esc_html_e('Tags', 'fancylab'); ?> : <span><?php the_tags('', ', '); ?></span>
             <?php endif; ?>
 
         </p>

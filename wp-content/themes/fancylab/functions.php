@@ -91,13 +91,25 @@ if (!function_exists('fancy_lab_setup')) {
             )
         );
 
-
+        // This theme uses wp_nav_menu() in two locations.
         register_nav_menus(
             array(
                 'fancy_lab_main_menu' => esc_html__('Fancy Lab Main Menu', 'fancylab'),
                 'fancy_lab_footer_menu' => esc_html__('Fancy Lab Footer Menu', 'fancylab')
             )
         );
+
+
+        /*
+		 * Make theme available for translation.
+		 * Translations can be filed in the /languages/ directory.
+		 * If you're building a theme based on Fancy Lab, use a find and replace
+		 * to change 'fancy-lab' to the name of your theme in all the template files.
+		 */
+        $textdomain = 'fancylab';
+        load_theme_textdomain($textdomain, get_stylesheet_directory() . '/languages/');
+        load_theme_textdomain($textdomain, get_template_directory() . '/languages/');
+
 
         /*
 		 * Switch default core markup for search form, comment form, and comments

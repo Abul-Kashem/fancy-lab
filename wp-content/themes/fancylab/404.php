@@ -16,15 +16,15 @@ get_header(); ?>
             <div class="error-404">
 
                 <header>
-                    <h1><?php _e('Page Not Found!', 'fancylab'); ?> </h1>
-                    <p><?php _e('Unfortunately, the page you tried to reach does not exist on this site', 'fancylab'); ?></p>
+                    <h1><?php esc_html_e('Page Not Found!', 'fancylab'); ?> </h1>
+                    <p><?php esc_html_e('Unfortunately, the page you tried to reach does not exist on this site', 'fancylab'); ?></p>
                 </header>
 
                 <?php
                 the_widget(
                     'WP_Widget_Recent_Posts',
                     array(
-                        'title' => __('Take a Look at Our Latest Post', 'fancylab'),
+                        'title' => esc_html__('Take a Look at Our Latest Post', 'fancylab'),
                         'number' => 5,
                     )
                 );

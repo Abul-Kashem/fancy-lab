@@ -16,7 +16,9 @@ get_header();
     <main>
         <div class="container">
             <div class="row">
-                <h1>Search result for: <?php echo get_search_query(); ?></h1>
+                <h1>
+                    <?php esc_html_e('Search result for', 'fancylab'); ?> : <?php echo get_search_query(); ?>
+                </h1>
                 <?php
                 get_search_form();
 
@@ -30,13 +32,13 @@ get_header();
 
                     // We're using numeric page navigation here.
                     the_posts_pagination(array(
-                        'prev_text' => 'Previous',
-                        'next_text' => 'Next'
+                        'prev_text' => esc_html_e('Previous', 'fancylab'),
+                        'next_text' => esc_html_e('Next', 'fancylab')
                     ));
                 else :
                 ?>
 
-                    <p><?php _e('There are no result for query.', 'fancylab'); ?></p>
+                    <p><?php esc_html_e('There are no result for query.', 'fancylab'); ?></p>
 
                 <?php endif; ?>
 

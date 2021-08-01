@@ -54,8 +54,8 @@ get_header(); ?>
                     <?php
                     endwhile;
                     the_posts_pagination(array(
-                        'prev_text' => 'Previous',
-                        'next_text' => 'Next'
+                        'prev_text' => esc_html_e('Previous', 'fancylab'),
+                        'next_text' => esc_html_e('Next', 'fancylab')
                     ));
                 else :
                     ?>
