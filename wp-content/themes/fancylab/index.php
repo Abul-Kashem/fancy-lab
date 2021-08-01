@@ -1,21 +1,20 @@
 <?php
 
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Fancy Lab
- * 
- */
+    /**
+     * The main template file
+     *
+     * This is the most generic template file in a WordPress theme
+     * and one of the two required files for a theme (the other being style.css).
+     * It is used to display a page when nothing more specific matches a query.
+     * E.g., it puts together the home page when no home.php file exists.
+     *
+     * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+     *
+     * @package Fancy Lab
+     *
+     */
 
-
-get_header(); ?>
+get_header();?>
 
 <div class="content-area">
     <main>
@@ -23,34 +22,34 @@ get_header(); ?>
             <div class="row">
                 <div class="col-lg-9 col-md-8 col-12">
                     <?php
-                    // If there are any posts
-                    if (have_posts()) :
+                        // If there are any posts
+                        if ( have_posts() ):
 
-                        // Load posts loop
-                        while (have_posts()) : the_post();
-                            get_template_part('template-parts/content');
-                        endwhile;
+                            // Load posts loop
+                            while ( have_posts() ): the_post();
+                                get_template_part( 'template-parts/content' );
+                            endwhile;
 
-                        // We're using numeric page navigation here.
-                        the_posts_pagination(array(
-                            'prev_text' => esc_html_e('Previous', 'fancylab'),
-                            'next_text' => esc_html_e('Next', 'fancylab'),
-                        ));
+                            // We're using numeric page navigation here.
+                            the_posts_pagination( array(
+                                'prev_text' => esc_html__( 'Previous', 'fancylab' ),
+                                'next_text' => esc_html__( 'Next', 'fancylab' ),
+                            ) );
 
-                    else :
+                        else:
 
                     ?>
 
-                        <p><?php esc_html_e('Nothing to display', 'fancylab'); ?></p>
+                        <p><?php esc_html_e( 'Nothing to display', 'fancylab' );?></p>
 
-                    <?php endif; ?>
+                    <?php endif;?>
                 </div>
 
-                <?php get_sidebar(); ?>
+                <?php get_sidebar();?>
 
             </div>
         </div>
     </main>
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer();?>

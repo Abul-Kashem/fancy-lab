@@ -1,15 +1,14 @@
 <?php
 
-/**
- * The template for displaying search results pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
- *
- * @package Fancy Lab
- */
+    /**
+     * The template for displaying search results pages
+     *
+     * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
+     *
+     * @package Fancy Lab
+     */
 
-
-get_header();
+    get_header();
 ?>
 
 <div class="content-area">
@@ -17,30 +16,30 @@ get_header();
         <div class="container">
             <div class="row">
                 <h1>
-                    <?php esc_html_e('Search result for', 'fancylab'); ?> : <?php echo get_search_query(); ?>
+                    <?php esc_html_e( 'Search result for', 'fancylab' );?> :<?php echo get_search_query(); ?>
                 </h1>
                 <?php
-                get_search_form();
+                    get_search_form();
 
-                // If there are any posts
-                if (have_posts()) :
+                    // If there are any posts
+                    if ( have_posts() ):
 
-                    // Load posts loop
-                    while (have_posts()) : the_post();
-                        get_template_part('template-parts/content', 'search');
-                    endwhile;
+                        // Load posts loop
+                        while ( have_posts() ): the_post();
+                            get_template_part( 'template-parts/content', 'search' );
+                        endwhile;
 
-                    // We're using numeric page navigation here.
-                    the_posts_pagination(array(
-                        'prev_text' => esc_html_e('Previous', 'fancylab'),
-                        'next_text' => esc_html_e('Next', 'fancylab')
-                    ));
-                else :
+                        // We're using numeric page navigation here.
+                        the_posts_pagination( array(
+                            'prev_text' => esc_html_e( 'Previous', 'fancylab' ),
+                            'next_text' => esc_html_e( 'Next', 'fancylab' ),
+                        ) );
+                    else:
                 ?>
 
-                    <p><?php esc_html_e('There are no result for query.', 'fancylab'); ?></p>
+                    <p><?php esc_html_e( 'There are no result for query.', 'fancylab' );?></p>
 
-                <?php endif; ?>
+                <?php endif;?>
 
 
             </div>
@@ -48,4 +47,4 @@ get_header();
     </main>
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer();?>

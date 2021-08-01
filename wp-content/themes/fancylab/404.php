@@ -1,14 +1,14 @@
 <?php
 
-/**
- * The template for displaying 404 pages (not found)
- *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
- *
- * @package Fancy Lab
- */
+    /**
+     * The template for displaying 404 pages (not found)
+     *
+     * @link https://codex.wordpress.org/Creating_an_Error_404_Page
+     *
+     * @package Fancy Lab
+     */
 
-get_header(); ?>
+get_header();?>
 
 <div class="content-area">
     <main>
@@ -16,18 +16,18 @@ get_header(); ?>
             <div class="error-404">
 
                 <header>
-                    <h1><?php esc_html_e('Page Not Found!', 'fancylab'); ?> </h1>
-                    <p><?php esc_html_e('Unfortunately, the page you tried to reach does not exist on this site', 'fancylab'); ?></p>
+                    <h1><?php esc_html_e( 'Page Not Found!', 'fancylab' );?> </h1>
+                    <p><?php esc_html_e( 'Unfortunately, the page you tried to reach does not exist on this site', 'fancylab' );?></p>
                 </header>
 
                 <?php
-                the_widget(
-                    'WP_Widget_Recent_Posts',
-                    array(
-                        'title' => esc_html__('Take a Look at Our Latest Post', 'fancylab'),
-                        'number' => 5,
-                    )
-                );
+                    the_widget(
+                        'WP_Widget_Recent_Posts',
+                        array(
+                            'title'  => esc_html__( 'Take a Look at Our Latest Post', 'fancylab' ),
+                            'number' => 5,
+                        )
+                    );
                 ?>
 
             </div>
@@ -35,4 +35,4 @@ get_header(); ?>
     </main>
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer();?>
